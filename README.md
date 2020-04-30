@@ -6,12 +6,13 @@ CRNN model constructed and trained using Keras with Tensorflow.
 
 ## Demo
 
+![demofile](https://user-images.githubusercontent.com/31719240/80689853-e5d28600-8b08-11ea-80f7-afe733040237.gif)
 
 
 ## Built Using
 
 * Back-end : Flask(Python)
-* Front-end : jQuery
+* Front-end : HTML, CSS, jQuery
 
 ## Installation
 

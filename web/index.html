@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Composer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='jscript.js') }}"></script>
+
+</head>
+
+<!--Reference : https://codepen.io/fvilers/pen/QyRQWp-->
+
+<div ng-app="app">
+  <div>
+    <div class="container">
+        <div class="page-header">
+            <h1>Predict Composer</h1>
+        </div>
+
+        <div class="alert alert-info">
+            Please upload wav or mp3 file!
+        </div>
+
+        <form class="submit file" action = "{{url_for('predict')}}" method = "POST" enctype = "multipart/form-data">
+            <div class="input-group">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" name="uploadfile">
+                    <label class="custom-file-label" id="chooseFile" for="inputGroupFile01">Choose File</label>
+                </div>
+            </div>
+
+            <div class="button">
+                <button type="submit" class="btn btn-primary">Upload</button>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+</html>

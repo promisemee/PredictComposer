@@ -1,0 +1,8 @@
+flask
+tensorflow
+keras
+werkzeug
+pydub
+librosa
+wave
+numpy
